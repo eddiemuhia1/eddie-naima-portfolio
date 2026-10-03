@@ -75,4 +75,5 @@ Technologies: ${project.technologies}
         // Add the project card to the webpage
         projectContainer.appendChild(projectCard);
         });
+console.log("welcome to Naima and Eddie'sportofolio!"
 
