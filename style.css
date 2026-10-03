@@ -12,6 +12,9 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 .nav-links{
     display: flex;
@@ -48,11 +51,48 @@ body{
   color: #e6edf3;
   text-decoration: none;
 }
-
 .logo span {
   color: #58a6ff;
 }
 
 .logo:hover {
   color: #79b8ff;
+}
+
+
+/* Contact Section */
+.contact-header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+}
+.contact-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    margin: 0.5rem 0;
+    color: #58a6ff;
+}
+.contact-header p {
+    font-size: 1rem;
+    color: #e6edf3;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto 3rem auto;
+}
+.contact-card {
+    background-color: #1f1f1f;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+.contact-card h3 {
+    color: #58a6ff;
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
 }
