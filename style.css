@@ -1,0 +1,9 @@
+body{
+    background-color: #080808;
+    color: #F4F4F5;
+    line-height: 1.6;
+    font-family: "Asap Sharp", Arial, sans-serif;
+}
+.container {
+    padding: 10px 5%;
+}
