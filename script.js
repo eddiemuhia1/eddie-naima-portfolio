@@ -76,5 +76,6 @@ Technologies: ${project.technologies}
         projectContainer.appendChild(projectCard);
         });
 console.log("welcome to Naima and Eddie'sportofolio!"
-console.log("Our projects:',projects);            
+console.log("Our projects:',projects); 
+console.log("Our testimonials:",testimonials);            
 
