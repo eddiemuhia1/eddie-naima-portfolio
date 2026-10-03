@@ -31,3 +31,7 @@ Eddie
 Purpose
 
 This project was created as part of our web development learning journey at Moringa School. It demonstrates our understanding of HTML, CSS, and basic JavaScript.
+## Team
+
+- Nacima — JavaScript Developer
+- Eddie — HTML & CSS Developer
