@@ -93,4 +93,8 @@ function showTestimonials() {
 }
 
 showTestimonials();
+function welcomeMessage() {
+  console.log("Welcome to the Naima and Eddie portfolio!");
+}
 
+welcomeMessage();
