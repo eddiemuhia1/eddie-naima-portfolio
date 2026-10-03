@@ -98,3 +98,6 @@ function welcomeMessage() {
 }
 
 welcomeMessage();
+const currentYear = new Date().getFullYear();
+
+console.log("Current year:", currentYear);
