@@ -49,7 +49,11 @@ const projects = [
        "A professional banking website concepts created to practice webpage layouts, navigation and interactives javascript features.",
         technologies:
         "HTML, CSS, JavaScript"
-    }
+    },
+    { 
+        title: "Bella Cuccina Restaurant Menu",
+        description: "A restaurant menu page.",
+        technologies: "HTML, CSS" },
 ];
 // Get the project container
 const projectContainer =
@@ -75,11 +79,11 @@ Technologies: ${project.technologies}
         // Add the project card to the webpage
         projectContainer.appendChild(projectCard);
         });
-console.log("welcome to Naima and Eddie'sportofolio!"
-console.log("Our projects:',projects); 
+console.log("welcome to Naima and Eddie portfolio!");
+console.log("Our projects:projects",projects); 
 console.log("Our testimonials:",testimonials); 
 function showprojects(){
-    projects.foreach(function(projects){
+    projects.forEach(function(projects){
         console.log(projects.title);
         console.log(projects.description);
     });
