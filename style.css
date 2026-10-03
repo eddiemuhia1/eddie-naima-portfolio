@@ -91,8 +91,59 @@ body{
     text-align: center;
     transition: border-color 0.3s ease, transform 0.3s ease;
 }
+.contact-card:hover {
+     border:2px solid #58a6ff;
+     transform: translateY(-4px);
+
+}
 .contact-card h3 {
     color: #58a6ff;
     font-size: 1.5rem;
     margin-bottom: 0.2rem;
+}
+.contact-card .role{
+    color: #e6edf3;
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+}
+/* Contact  Links */
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    color: #e6edf3;
+}
+.contact-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: #e6edf3;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+.contact-link:hover {
+   color:#e6edf3;
+   border-color: #58a6ff;
+   background-color: rgba(0, 240, 255, 0.05);
+}
+.github-btn {
+    font-weight: 600;
+    color: #e6edf3;
+}
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #8b949e;
+}
+
+.footer-note {
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
 }
