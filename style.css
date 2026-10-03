@@ -7,3 +7,52 @@ body{
 .container {
     padding: 10px 5%;
 }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #e6edf3;
+    font-weight: bold;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    position: relative;
+}
+.nav-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    left: 0;
+    height: 3px;
+    background-color: #58a6ff;
+    transition: width 0.3s ease;
+    position: absolute;
+}
+.nav-links a:hover::after {
+    width: 100%;
+}
+.logo {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #e6edf3;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #58a6ff;
+}
+
+.logo:hover {
+  color: #79b8ff;
+}
