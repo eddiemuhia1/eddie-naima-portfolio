@@ -77,5 +77,12 @@ Technologies: ${project.technologies}
         });
 console.log("welcome to Naima and Eddie'sportofolio!"
 console.log("Our projects:',projects); 
-console.log("Our testimonials:",testimonials);            
+console.log("Our testimonials:",testimonials); 
+function showprojects(){
+    projects.foreach(function(projects){
+        console.log(projects.title);
+        console.log(projects.description);
+    });
+}
+showprojects();
 
