@@ -85,4 +85,12 @@ function showprojects(){
     });
 }
 showprojects();
+function showTestimonials() {
+  testimonials.forEach(function(testimonial) {
+    console.log(testimonial.name);
+    console.log(testimonial.message);
+  });
+}
+
+showTestimonials();
 
