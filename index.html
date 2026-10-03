@@ -1,88 +1,341 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Asap+Sharp:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Reddit+Sans+Condensed:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Asap+Sharp:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Sans+Condensed:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Nacima & Eddie | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
 
-    <header>
-      <div class = "container">
-        <nav class="navbar">
-           <a href="#home" class="logo">Naima <span>&amp;</span> Eddie</a>
-          <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#project-container">Projects</a></li>
-                <li><a href="#testimonial-container">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav> 
-        </div> 
-    </header>
+  <!-- Navigation -->
+  <header class="header">
+    <nav>
+      <div class="logo">N &amp; E ✦</div>
 
-    <!-- TESTIMONIALS -->
-    <section id="testimonial-container" class="section">
-        <h2 class="section-title">Testimonials</h2>
-        <div id="testimonials-list" class="card-grid"></div>
-        <!-- script.js inserts a card for each testimonial -->
-    </section>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-    <!-- PROJECTS -->
-    <section id="project-container" class="section">
-        <h2 class="section-title">Projects</h2>
-        <div id="projects-list" class="card-grid"></div>
-    </section>
+  <main>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="contact-section">
-        <div class="contact-header">
-         <h2>Contact Us</h2>
-        <p> Have Questions or Want to collaborate? Reach Out to either of us directly!</p>
+    <!-- Home -->
+    <section id="home" class="about">
+
+      <div class="hero-content">
+
+        <p class="small-title">WELCOME TO OUR PORTFOLIO ✨</p>
+
+        <h1>Hi, we're <span>Nacima &amp; Eddie</span></h1>
+
+        <p class="intro">
+          Software Engineering students who love creating
+          beautiful, responsive and interactive websites.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn">Explore Our Work</a>
+          <a href="#contact" class="btn btn-outline">Let's Connect</a>
         </div>
 
-        <!-- Dual contact cards -->
+      </div>
 
-        <div class ="contact-grid">
-          <div class="contact-card">
-                <h3>Eddie Muhia</h3>
-                <p class ="role">HTML & CSS Developer</p>
-          <div class="contact-details">
-             <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-            <a href="mailto:eddiemuhia1@gmail.com" class="contact-link">eddiemuhia1@gmail.com</a></p>
-              <span class="icon"><i class="fa-brands fa-github"></i></span>
-             <a href="https://github.com/eddiemuhia1" target="_blank" rel="noopener noreferrer" class="contact-link github btn">
-                GitHub Profile </a>
+      <!-- Aesthetic Image -->
+      <div class="image-container">
+        <img
+          src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=800&q=80"
+          alt="Aesthetic desk with flowers and soft decor"
+          class="profile-image"
+        >
+      </div>
+
+      <!-- Team Members -->
+      <div class="team">
+
+        <article class="card member">
+          <div class="icon">
+            <i class="fa-solid fa-laptop-code"></i>
           </div>
 
-        </div>
-        <div class="contact-card">
-                <h3>Naima Muhidin</h3>
-                <p class ="role">JavaScript Developer</p>
-          <div class="contact-details">
-             <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-            <a href="mailto:nimcomuxidnaxmed7@gmail.com" class="contact-link">nimcomuxidnaxmed7@gmail.com</a></p>
-           
-             <span class="icon"><i class="fa-brands fa-github"></i></span>
-             <a href="https://github.com/nimcomuxidinaxmed7-cmd" target="_blank" rel="noopener noreferrer" class="contact-link github btn">
-                GitHub Profile </a>
+          <h3>Nacima</h3>
+
+          <p>
+            A software engineering student passionate about
+            web development, creative design and learning
+            new technologies.
+          </p>
+        </article>
+
+        <article class="card member">
+          <div class="icon">
+            <i class="fa-solid fa-code"></i>
           </div>
-        </div>
+
+          <h3>Eddie</h3>
+
+          <p>
+            A software engineering student interested in
+            creating interactive websites and improving
+            development skills.
+          </p>
+        </article>
+
+      </div>
+
     </section>
 
-    <section>
-     <footer class="site-footer">
-        <p>&copy; 2026 Naima &amp; Eddie. All rights reserved.</p>
-        <p class="footer-note">Built with HTML, CSS and JavaScript.</p>
-      </footer>
+
+    <!-- Projects -->
+    <section id="projects">
+
+      <p class="small-title">WHAT WE HAVE BUILT</p>
+
+      <h2>Our Projects</h2>
+
+      <div class="grid">
+
+        <article class="card project">
+
+          <div class="project-icon">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <h3>Personal Portfolio</h3>
+
+          <p>
+            A responsive portfolio website created to showcase
+            our skills, projects and software engineering
+            learning journey.
+          </p>
+
+          <p class="roles">
+            <strong>Nacima:</strong> Layout &amp; CSS |
+            <strong>Eddie:</strong> JavaScript
+          </p>
+
+          <p class="tech">
+            Technologies: HTML, CSS, JavaScript
+          </p>
+
+          <div class="links">
+            <a class="btn" href="https://github.com/nimcomuxidinaxmed7-cmd" target="_blank">
+              <i class="fa-brands fa-github"></i>
+              Nacima's GitHub
+            </a>
+
+            <a class="btn btn-outline" href="#">
+              Live Demo
+            </a>
+          </div>
+
+        </article>
+
+
+        <article class="card project">
+
+          <div class="project-icon">
+            <i class="fa-solid fa-building-columns"></i>
+          </div>
+
+          <h3>Banking Website</h3>
+
+          <p>
+            A professional banking website concept created
+            to practice webpage layouts, navigation and
+            interactive JavaScript features.
+          </p>
+
+          <p class="roles">
+            <strong>Nacima:</strong> Pages |
+            <strong>Eddie:</strong> Interactive Features
+          </p>
+
+          <p class="tech">
+            Technologies: HTML, CSS, JavaScript
+          </p>
+
+          <div class="links">
+            <a class="btn" href="https://github.com/eddiemuhia1" target="_blank">
+              <i class="fa-brands fa-github"></i>
+              Eddie's GitHub
+            </a>
+
+            <a class="btn btn-outline" href="#">
+              Live Demo
+            </a>
+          </div>
+
+        </article>
+
+      </div>
+
     </section>
 
 
+    <!-- Skills -->
+    <section id="skills">
+
+      <p class="small-title">WHAT WE ARE LEARNING</p>
+
+      <h2>Our Skills</h2>
+
+      <ul class="skills">
+
+        <li>
+          <i class="fa-brands fa-html5"></i>
+          HTML
+        </li>
+
+        <li>
+          <i class="fa-brands fa-css3-alt"></i>
+          CSS
+        </li>
+
+        <li>
+          <i class="fa-brands fa-js"></i>
+          JavaScript
+        </li>
+
+        <li>
+          <i class="fa-brands fa-github"></i>
+          Git &amp; GitHub
+        </li>
+
+        <li>
+          <i class="fa-solid fa-users"></i>
+          Teamwork
+        </li>
+
+      </ul>
+
+    </section>
+
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+
+      <p class="small-title">OUR JOURNEY</p>
+
+      <h2>Testimonials</h2>
+
+      <div class="grid">
+
+        <article class="card testimonial">
+
+          <div class="quote">
+            <i class="fa-solid fa-quote-left"></i>
+          </div>
+
+          <p>
+            Working together on this project helped us improve
+            our communication, teamwork and web development skills.
+          </p>
+
+          <h3>Nacima &amp; Eddie</h3>
+
+        </article>
+
+
+        <article class="card testimonial">
+
+          <div class="quote">
+            <i class="fa-solid fa-quote-left"></i>
+          </div>
+
+          <p>
+            Every project gives us an opportunity to learn,
+            experiment with new ideas and become better developers.
+          </p>
+
+          <h3>Our Team</h3>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+
+      <p class="small-title">GET IN TOUCH</p>
+
+      <h2>Let's Connect 💌</h2>
+
+      <div class="card contact-card">
+
+        <p>
+          <i class="fa-solid fa-envelope"></i>
+          <strong>Nacima:</strong>
+          <a href="mailto:nimcomuxidinaxmed7@gmail.com">
+            nimcomuxidinaxmed7@gmail.com
+          </a>
+        </p>
+
+        <p>
+          <i class="fa-solid fa-envelope"></i>
+          <strong>Eddie:</strong>
+          <a href="mailto:eddiemuhia1@gmail.com">
+            eddiemuhia1@gmail.com
+          </a>
+        </p>
+
+        <p>
+          <i class="fa-brands fa-github"></i>
+          <strong>Nacima:</strong>
+          <a href="https://github.com/nimcomuxidinaxmed7-cmd" target="_blank">
+            github.com/nimcomuxidinaxmed7-cmd
+          </a>
+        </p>
+
+        <p>
+          <i class="fa-brands fa-github"></i>
+          <strong>Eddie:</strong>
+          <a href="https://github.com/eddiemuhia1" target="_blank">
+            github.com/eddiemuhia1
+          </a>
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      &copy; 2026 Nacima &amp; Eddie · Built with HTML, CSS &amp; JavaScript ✨
+    </p>
+  </footer>
+
+
+  <!-- JavaScript -->
   <script src="script.js"></script>
 
 </body>
 </html>
+```
+
+
+
